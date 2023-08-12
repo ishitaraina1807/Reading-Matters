@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+
+:root {
+  --grey : #eff2f1 ; 
+  --lightblue : #89c6ff;
+  --darkblue : #60a6cc;
+  --customblack: #283136;
+  --greyishblack : #698797; 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: var(--grey);
+  font-family: 'Nunito', sans-serif;
+}
+.navbar, .footer{
+  padding: 20px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h1{
+color: var(--lightblue);
+font-size: 2rem;
+}
+.navbar span {
+  color: var(--greyishblack);
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.navbar h1:hover {
+color: var(--darkblue);
+cursor: pointer;
+transition: 0.2s;
+}
+.navbar span:hover{
+  color: var(--customblack);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.footer{
+  background-color: var(--customblack);
+}
+.footer h1{
+  color: var(--lightblue);
+  font-size: 2rem;
+}
+.footer h2{
+  font-size: 1rem;
+  color: white;
+}
+.img-fluid{
+  width: 50px;
+}
+.homepage1{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 4rem;
+}
+.maintext {
+  margin-top: 70px;
+}
+.maintext h1{
+  font-size: 3rem;
+  width: 30rem;
+} 
+.maintext p {
+  font-size: 1.2rem;
+  width: 34rem;
+  color: var(--greyishblack);
+  font-weight: 300;
+  margin: 20px 0;
+}
+.homepage2{
+  margin: 0 200px;
+  padding: 2.5rem 0;
+}
+.section{
+  display: flex;
+  justify-content: space-between;
+}
+.text{
+   margin-top: 80px ;
+}
+.text h2{
+  color: var(--customblack);
+  font-size: 1.3rem;
+}
+.text p{
+  max-width: 30rem;
+  color: var(--greyishblack);
+  font-size: 1.1rem;
+}
+.homepage3{
+  background-color: var(--lightblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.homepage3 img {
+  width: 28rem;
+}
+.homepage4{
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 8rem;
+}
+.homepage4 p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--greyishblack);
+  font-weight: 300;
+}
+.download, .buybooks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download img, .buybooks img {
+  width: 20rem;
+}
+.img-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 50px 0 150px 0;
+}
+.searchpage{
+margin: 60px 200px;
+}
+.searchpage p {
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+.search {
+margin-top: 3rem;
+text-align: center;
+display: flex;
+padding: 0 14rem;
+justify-content: center;
+align-items: center;
+}
+.search img {
+  width: 1rem;
+}
+.search-section{
+  display: flex;
+  flex-direction: column;
+
+}
