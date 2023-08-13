@@ -24,6 +24,25 @@ body{
 .navbar h1{
 color: var(--lightblue);
 font-size: 2rem;
+margin: 0;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.3s;
 }
 .navbar span {
   color: var(--greyishblack);
@@ -58,7 +77,7 @@ transition: 0.2s;
 .homepage1{
   display: flex;
   justify-content: center;
-  padding: 60px 0;
+  padding: 30px 0;
   gap: 4rem;
 }
 .maintext {
@@ -155,5 +174,189 @@ align-items: center;
 .search-section{
   display: flex;
   flex-direction: column;
+}
+.bookinfo{
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .maintext h1{
+    width: 25rem;
+  } 
+  .maintext p {
+    width: 29rem;
+  }
+  .homepage1 img {
+    width: 30rem;
+  }
+  .text h2{
+    width: 20rem;
+  }
+  .text p {
+    width: 27rem;
+  }
+  .searchpage{
+    margin: 40px 100px;
+  }
+}
+@media (max-width: 1050px) {
+  .maintext h1{
+    width: 18rem;
+  } 
+  .maintext p {
+    width: 23rem;
+  }
+  .homepage1 img {
+    width: 20rem;
+  }
+  .text p {
+    width: 23rem;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
 
+  .navbar.open .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .homepage3 img {
+    width: 24rem;
+  }
+  .homepage3 h1 {
+    font-size: 1.5rem;
+  }
+  .homepage4 p {
+    text-align: center;
+  }
+ .homepage2{
+  margin: 0 70px;
+ }
+ .navbar{
+  padding: 10px 100px;
+ }
+ .search{
+  padding: 0 10rem;
+ }
+}
+@media (max-width: 750px) {
+  .homepage1 img {
+    display: none;
+  }
+  .homepage1 {
+    text-align: center;
+    padding: 0;
+  }
+  .homepage1 h1{
+    width: 30rem;
+  }
+  .maintext p {
+    width: 33rem;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .section img {
+    width: 20rem;
+  }
+  .technology {
+    display: none;
+  }
+  .homepage2{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text{
+    margin-top: 20px;
+  }
+  .footer{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer h2{
+   width: 10rem;
+  }
+  .homepage4{
+    flex-direction: column;
+  }
+  .homepage3 h1{
+    text-align: center;
+  }
+  .search{
+    padding: 0 4rem;
+}
+.searchpage p {
+  text-align: center;
+}
+.searchpage dt {
+  margin-bottom: 20px;
+}
+}
+@media (max-width: 510px) {
+.homepage1 h1{
+  width: 25rem;
+}
+.homepage1 p{
+  width: 27rem;
+}
+.search {
+  padding: 0 1rem;
+}
+}
+@media (max-width: 470px) {
+  .homepage1 h1{
+    max-width: 25rem;
+  }
+  .homepage1 p {
+    max-width: 28rem;
+  }
+  .navbar {
+    padding: 10px ;
+  }
+  .searchpage{
+    margin: 2px 50px;
+  }
+}
+@media (max-width: 370px) {
+  .homepage1 h1{
+    max-width: 20rem;
+  }
+  .homepage1 p{
+    max-width: 20rem;
+  }
+  .footer, .navbar{
+    padding: 5px;
+  }
+  .homepage2 p {
+    width: 20rem;
+  }
+  .bookinfo{
+    flex-direction: column;
+    text-align: center;
+  }
+  .bookinfo img{
+    height: 10rem;
+    object-fit: contain;
+  }
 }
