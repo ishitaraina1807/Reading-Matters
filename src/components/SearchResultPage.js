@@ -41,7 +41,7 @@ const SearchResultPage = () => {
               }}
               className="group"
             >
-              <div className="flex aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
+              <div className="bookinfo aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
                 {book.volumeInfo.imageLinks && (
                   <img
                     className="object-cover"
