@@ -15,7 +15,7 @@ export default function NavBar() {
           <h1>Reading Matters</h1>
         </Link>
         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-          <a href="">
+          <a href="https://github.com/ishitaraina1807/Reading-Matters">
             <span>About</span>
           </a>
           <a href="https://github.com/ishitaraina1807" target="_blank">
