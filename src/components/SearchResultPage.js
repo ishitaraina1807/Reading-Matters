@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { AuthContext } from './AuthProvider';
-import { updateFavoriteBooks, updateReadingList } from './firebaseFunction';
 import blankheart from '../images/blankheart.png';
 import blackheart from '../images/blackheart.png';
 import check from '../images/check.png';
 import add from '../images/add.png';
+// import { AuthContext } from '../AuthProvider';
+// import { updateFavoriteBooks, updateReadingList } from '../firebase'; 
 
 const SearchResultPage = () => {
     const location = useLocation();
     const searchQuery = new URLSearchParams(location.search).get('query');
     const [searchResults, setSearchResults] = useState([]);
-    const { user } = useContext(AuthContext);
+    // const { user } = useContext(AuthContext);
 
   useEffect(() => {
 
@@ -28,46 +28,6 @@ const SearchResultPage = () => {
 
     fetchData();
   }, [searchQuery]);
-
-  const toggleFavorite = async (bookId) => {
-    if (!user) {
-      // User is not logged in, handle accordingly
-      return;
-    }
-
-    const updatedFavorites = [...user.favoriteBooks];
-
-    if (updatedFavorites.includes(bookId)) {
-      // Book is already in favorites, remove it
-      updatedFavorites.splice(updatedFavorites.indexOf(bookId), 1);
-    } else {
-      // Book is not in favorites, add it
-      updatedFavorites.push(bookId);
-    }
-
-    // Update user's favorites in Firebase
-    await updateFavoriteBooks(user.uid, updatedFavorites);
-  };
-
-  const toggleReadingList = async (bookId) => {
-    if (!user) {
-      // User is not logged in, handle accordingly
-      return;
-    }
-
-    const updatedReadingList = [...user.readingList];
-
-    if (updatedReadingList.includes(bookId)) {
-      // Book is already in reading list, remove it
-      updatedReadingList.splice(updatedReadingList.indexOf(bookId), 1);
-    } else {
-      // Book is not in reading list, add it
-      updatedReadingList.push(bookId);
-    }
-
-    // Update user's reading list in Firebase
-    await updateReadingList(user.uid, updatedReadingList);
-  };
 
   return (
     <div>
@@ -100,21 +60,8 @@ const SearchResultPage = () => {
                 <p className="mt-1 text-sm font-thin text-gray-900">
                   <b>Published Date: </b>{book.volumeInfo.publishedDate}
                 </p>
-                <div className="btns flex">
-                  <button
-                    onClick={() => toggleFavorite(book.id)}
-                  >
-                    {/* Use blackheart image if book is in favorites, otherwise use blankheart */}
-                    <img src={user?.favoriteBooks.includes(book.id) ? blackheart : blankheart} alt="Heart" />
-                  </button>
-                  <button
-                    onClick={() => toggleReadingList(book.id)}
-                  >
-                    {/* Use check image if book is in reading list, otherwise use plus */}
-                    <img src={user?.readingList.includes(book.id) ? check : add} alt="add" />
-                  </button>
                 </div>
-                </div>
+               
               </div>
             </Link>
           ))}
