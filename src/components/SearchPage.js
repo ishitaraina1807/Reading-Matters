@@ -27,7 +27,7 @@ export default function SearchPage() {
                     <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
                       <div className="flex w-0 flex-1 items-center">
                         <div className="ml-4 flex min-w-0 flex-1 gap-2">
-                          <span className="truncate font-medium">Your Favorite Books</span>
+                          <span className="truncate font-medium">Your Favorite Books - upcoming feature</span>
                         </div>
                       </div>
                       <div className="ml-4 flex-shrink-0">
@@ -39,7 +39,7 @@ export default function SearchPage() {
                     <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
                       <div className="flex w-0 flex-1 items-center">
                         <div className="ml-4 flex min-w-0 flex-1 gap-2">
-                          <span className="truncate font-medium">Your Reading List</span>
+                          <span className="truncate font-medium">Your Reading List - upcoming feature</span>
                         </div>
                       </div>
                       <div className="ml-4 flex-shrink-0">
