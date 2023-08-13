@@ -34,19 +34,19 @@ const BookDescriptionPage = () => {
                         className="rounded-lg bg-gray-100 "
                     />
                     <dl className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
-                        <div className="border-t border-gray-200 pt-2">
+                        <div className="border-t border-greyishblack pt-2">
                             <dd className="mt-2 text-sm text-gray-500"><b>Author: </b>{volumeInfo.authors ? volumeInfo.authors.join(', ') : 'Unknown'}</dd>
                         </div>
-                        <div className="border-t border-gray-200 pt-2">
+                        <div className="border-t border-greyishblack pt-2">
                             <dd className="mt-2 text-sm text-gray-500"><b>Publisher: </b>{volumeInfo.publisher}</dd>
                         </div>
-                        <div className="border-t border-gray-200 pt-2">
+                        <div className="border-t border-greyishblack pt-2">
                             <dd className="mt-2 text-sm text-gray-500"><b>Published Date: </b>{volumeInfo.publishedDate}</dd>
                         </div>
-                        {/* <div className="border-t border-gray-200 pt<b></b>-4">
+                        {/* <div className="border-t border-greyishblack pt<b></b>-4">
                         <dd className="mt-2 text-sm text-gray-500">Numb<b></b>er of Pages: {volumeInfo.pageCount}</dd>
                         </div> */}
-                        <div className="border-t border-gray-200 pt-2">
+                        <div className="border-t border-greyishblack pt-2">
                             <dd className="mt-2 text-sm text-gray-500"><b>Reviews:</b> {volumeInfo.ratingsCount || 0} ratings</dd>
                         </div>
                     </dl>
