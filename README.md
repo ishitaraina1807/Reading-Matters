@@ -1,4 +1,4 @@
-# Book Finder App
+# Reading Matters - BookFinder For You
 
 ![Readging Matters](screenshots/homepage.png)
 
