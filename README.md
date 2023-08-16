@@ -48,12 +48,4 @@ _Book Details - Get all the information you need about a book._
 6. Add your Firebase configuration and Google Books API key to the app.
 7. Run the app: `npm start`
 
-## How to Use
-
-1. Open the app in your browser.
-2. Use the search bar to look for books by entering keywords, titles, authors, or ISBNs.
-3. Browse through the search results and click on a book to view its details.
-4. If you want to save a book to your favorites, create an account or log in.
-5. In the book details view, click the "Add to Favorites" button.
-
 Happy reading with the Book Finder App! If you encounter any issues or have suggestions, feel free to open an issue or reach out to us. Enjoy exploring new literary worlds! 📖🌟
