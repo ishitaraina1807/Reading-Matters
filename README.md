@@ -1,6 +1,6 @@
 # Book Finder App
 
-![Book Finder App](screenshots/banner.png)
+![Readging Matters](screenshots/homepage.png)
 
 Welcome to the Book Finder App, your ultimate tool for discovering your next literary adventure! 📚🔍
 
@@ -25,8 +25,6 @@ The Book Finder App is a delightful web application built with React, Tailwind C
 
 - **Book Details**: Get comprehensive information about a book, including its title, author, cover image, description, and more. Make informed decisions about your reading choices.
 
-- **Save Favorites**: Create an account and log in to save your favorite books. Your personalized collection is securely stored using Firebase authentication and Firestore.
-
 - **User-Friendly Interface**: The app features an intuitive and visually pleasing interface, designed with Tailwind CSS. Enjoy a smooth and engaging browsing experience.
 
 - **Responsive Design**: Access the app from various devices, including desktops, tablets, and smartphones. The responsive design ensures a consistent experience across platforms.
@@ -43,19 +41,18 @@ The Book Finder App is a delightful web application built with React, Tailwind C
 
 ## Screenshots
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/homepage2.png)
 _Home Page - Search for your favorite books._
 
-![Book Details](screenshots/book-details.png)
+![Book Details](screenshots/search.png)
 _Book Details - Get all the information you need about a book._
 
-![Favorites](screenshots/favorites.png)
-_Favorites - Save and revisit your favorite books._
+![Search Result](screenshots/searchresult.png)
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/your-username/book-finder-app.git`
-2. Navigate to the project directory: `cd book-finder-app`
+1. Clone this repository: `git clone https://github.com/ishitaraina1807/Reading-Matters.git`
+2. Navigate to the project directory: `cd Reading-Matters`
 3. Install dependencies: `npm install`
 4. Create a Firebase project and set up authentication and Firestore.
 5. Obtain a Google Books API key from the [Google Cloud Console](https://console.cloud.google.com/).
