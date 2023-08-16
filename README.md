@@ -4,17 +4,6 @@
 
 Welcome to the Book Finder App, your ultimate tool for discovering your next literary adventure! 📚🔍
 
-## Table of Contents
-
-- [About the App](#about-the-app)
-- [Key Features](#key-features)
-- [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## About the App
 
 The Book Finder App is a delightful web application built with React, Tailwind CSS, Google Books API, and Firebase. Its primary goal is to make finding your next favorite book an enjoyable and easy experience. Whether you're a passionate bookworm or just looking for a good read, this app has got you covered!
