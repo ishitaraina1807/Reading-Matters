@@ -36,7 +36,7 @@ const SignUp = () => {
         displayName: values.name,
       });
       console.log("New user created with credentials: ", user);
-      navigate("/login", { state: { name: values.name } });
+      navigate("/search", { state: { name: values.name } });
 
       await setDoc(doc(db, "users", user.uid), {
         name: values.name,
