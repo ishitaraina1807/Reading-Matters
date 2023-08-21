@@ -323,6 +323,9 @@ align-items: center;
 .search {
   padding: 0 1rem;
 }
+  .technology{
+    display: none;
+  }
 }
 @media (max-width: 470px) {
   .homepage1 h1{
