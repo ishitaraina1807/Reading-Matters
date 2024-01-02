@@ -2,7 +2,7 @@
 
 ![Readging Matters](screenshots/homepage.png)
 
-Welcome to the Book Finder App, your ultimate tool for discovering your next literary adventure! 📚🔍
+Welcome to Reading Matter, your ultimate tool for discovering your next literary adventure! 📚🔍
 
 ## About the App
 
