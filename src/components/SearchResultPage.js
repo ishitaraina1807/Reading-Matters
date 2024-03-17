@@ -56,7 +56,7 @@ const SearchResultPage = () => {
                     alt={book.volumeInfo.title}
                   />
                 )}
-                <div className="bookinfo content mx-5 my-2">
+                <div className="book-info-content mx-5 my-2">
                   <h1 className="font-semibold text-xl text-customblack">
                     {book.volumeInfo.title}
                   </h1>
