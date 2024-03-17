@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import blankheart from '../images/blankheart.png';
-// import blackheart from '../images/blackheart.png';
-// import check from '../images/check.png';
-// import add from '../images/add.png';
 
 const SearchResultPage = () => {
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('query');
   const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,8 +17,11 @@ const SearchResultPage = () => {
         );
         const data = await response.json();
         setSearchResults(data.items || []);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
+        setError('Error fetching data. Please try again later.');
+        setLoading(false);
       }
     };
 
@@ -31,6 +32,8 @@ const SearchResultPage = () => {
     <div>
       <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
         <div className='mb-10 text-customblack font-semibold'>Search Results:</div>
+        {loading && <div>Loading...</div>}
+        {error && <div>{error}</div>}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6">
           {searchResults.map((book) => (
             <Link
@@ -40,8 +43,9 @@ const SearchResultPage = () => {
                 search: `?bookInfo=${encodeURIComponent(JSON.stringify(book))}`,
               }}
               className="group"
+              aria-label={book.volumeInfo.title}
             >
-              <div className="bookinfo aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
+              <div className="book-info aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
                 {book.volumeInfo.imageLinks && (
                   <img
                     className="object-cover"
@@ -52,7 +56,7 @@ const SearchResultPage = () => {
                     alt={book.volumeInfo.title}
                   />
                 )}
-                <div className="book-info mx-5 my-2">
+                <div className="book-info-content mx-5 my-2">
                   <h1 className="font-semibold text-xl text-customblack">
                     {book.volumeInfo.title}
                   </h1>
