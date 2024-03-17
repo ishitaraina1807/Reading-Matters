@@ -45,7 +45,7 @@ const SearchResultPage = () => {
               className="group"
               aria-label={book.volumeInfo.title}
             >
-              <div className="book-info aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
+              <div className="bookinfo aspect-h-1 aspect-w-1 w-full h-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7">
                 {book.volumeInfo.imageLinks && (
                   <img
                     className="object-cover"
@@ -56,7 +56,7 @@ const SearchResultPage = () => {
                     alt={book.volumeInfo.title}
                   />
                 )}
-                <div className="book-info-content mx-5 my-2">
+                <div className="bookinfo content mx-5 my-2">
                   <h1 className="font-semibold text-xl text-customblack">
                     {book.volumeInfo.title}
                   </h1>
