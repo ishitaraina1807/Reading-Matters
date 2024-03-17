@@ -10,8 +10,13 @@ const BookDescriptionPage = () => {
     useEffect(() => {
         const bookInfoQueryParam = new URLSearchParams(location.search).get('bookInfo');
         if (bookInfoQueryParam) {
-            const parsedBookInfo = JSON.parse(decodeURIComponent(bookInfoQueryParam));
-            setBookInfo(parsedBookInfo);
+            try {
+                const parsedBookInfo = JSON.parse(decodeURIComponent(bookInfoQueryParam));
+                setBookInfo(parsedBookInfo);
+            } catch (error) {
+                console.error('Error parsing book info:', error);
+                // Handle parsing error
+            }
         }
     }, [location.search]);
 
