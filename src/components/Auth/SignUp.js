@@ -41,8 +41,12 @@ const SignUp = () => {
         favoriteBooks: [],
         readingList: [],
       };
-
-      await setDoc(doc(db, "users", user.uid), userData);
+      
+      try {
+        setDoc(doc(db, "users", user.uid), userData)
+      } catch (error) {
+        console.error("Error writing document:", error.message);
+      }
 
       navigate("/search", { state: { name: values.username } });
     } catch (error) {
