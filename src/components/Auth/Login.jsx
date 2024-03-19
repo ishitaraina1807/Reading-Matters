@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../AuthProvider"; 
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -92,7 +92,7 @@ const Login = () => {
             />
           </div>
           <div className="flex justify-center items-center text-sm my-2">
-            <span className="text-gray-800">Don't have an account?</span>
+            <span className="text-gray-800">Don&apos;t have an account?</span>
             &nbsp;&nbsp;
             <span
               className="text-white font-bold cursor-pointer hover:underline"

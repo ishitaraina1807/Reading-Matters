@@ -1,4 +1,3 @@
-import React from 'react';
 import mainapresentation from '../images/mainapresentation.svg';
 import home1 from '../images/home1.svg'
 import home2 from '../images/home2.svg'
@@ -19,7 +18,7 @@ export default function Homepage1() {
       <div className="homepage1">
         <div className="maintext">
           <h1>Find the <span className='text-lightblue'>books</span> you are looking for anywhere</h1>
-          <p>Search for books anywhere, you don't need to know the name of the book, if you know the name of the author or the publisher, just type and search.</p>
+          <p>Search for books anywhere, you don&apos;t need to know the name of the book, if you know the name of the author or the publisher, just type and search.</p>
           <Link
             to='/login'
             className="rounded-md bg-darkblue px-8 py-2.5 button text-white shadow-sm hover:bg-lightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -62,7 +61,7 @@ export default function Homepage1() {
         </div>
         <div className="buybooks">
         <img src={home6} alt="girl-standing" />
-        <p>Buy the books you're looking for from your phone or PC</p>
+        <p>Buy the books you&apos;re looking for from your phone or PC</p>
         </div>
       </div>
       <div className="technologies">

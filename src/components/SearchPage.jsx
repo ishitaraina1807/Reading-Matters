@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 import searchIconSvg from '../images/searchiconsvg.png';
 import search from '../images/search.svg';
@@ -57,7 +57,7 @@ export default function SearchPage() {
           </div>
 
         </div>
-        <p className='text-customblack font-light'>You don't need to know the name of the book, if you know the name of the author or publisher, just type, search and find</p>
+        <p className='text-customblack font-light'>You don&apos;t need to know the name of the book, if you know the name of the author or publisher, just type, search and find</p>
       </div>
       <div className="search">
         <input

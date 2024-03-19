@@ -47,7 +47,8 @@ _Book Details - Get all the information you need about a book._
 5. Obtain a Google Books API key from the [Google Cloud Console](https://console.cloud.google.com/).
 
 6. Copy the contents of `.env.example` to `.env` and change the api with your own:
-    ```
+
+    ```shell
     cp .env.example .env
     ```
 
