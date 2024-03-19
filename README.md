@@ -45,7 +45,12 @@ _Book Details - Get all the information you need about a book._
 3. Install dependencies: `npm install`
 4. Create a Firebase project and set up authentication and Firestore.
 5. Obtain a Google Books API key from the [Google Cloud Console](https://console.cloud.google.com/).
+
+8. Copy the contents of `.env.example` to `.env` and change the api with your own:
+    ```
+    cp .env.example .env
+    ```
 6. Add your Firebase configuration and Google Books API key to the app.
-7. Run the app: `npm start`
+7. Run the app: `npm run dev`
 
 Happy reading with the Book Finder App! If you encounter any issues or have suggestions, feel free to open an issue or reach out to us. Enjoy exploring new literary worlds! 📖🌟
