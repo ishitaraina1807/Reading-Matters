@@ -11,7 +11,7 @@ const SearchResultPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiKey = import.meta.env.VITE_BOOK_API; 
+        const apiKey = import.meta.env.VITE_GOOGLE_BOOK_API; 
         const response = await fetch(
           `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchQuery)}&key=${apiKey}`
         );
