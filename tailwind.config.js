@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -11,6 +12,9 @@ module.exports = {
       'darkblue': '#60a6cc',
       'customblack': '#283136',
       'greyishblack': '#698797'
+      },
+      fontFamily: {
+        nunito: ['Nunito', "sans-serif"],
       },
     },
   },
