@@ -15,7 +15,7 @@ const authReducer = (state, action) => {
   }
 };
 
-const AuthProvider = ({ children: children }) => {
+const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
 
   return (
