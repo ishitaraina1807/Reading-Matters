@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function NavBar() {
+export default function NavBar({ toggleDarkMode, isDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,6 +26,15 @@ export default function NavBar() {
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
+        </div>
+        <div className="dark-mode-switch">
+          <input
+            type="checkbox"
+            id="dark-mode-switch"
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+          />
+          <label htmlFor="dark-mode-switch">Dark Mode</label>
         </div>
       </nav>
     </div>
