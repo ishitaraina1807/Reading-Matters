@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
@@ -11,10 +12,17 @@ import { AuthProvider } from "./components/AuthProvider";
 import BookDescription from "./components/BookDescription";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode');
+  };
+
   return (
-    <div className="app">
-      <AuthProvider>
-        <NavBar />
+    <div className={`app ${isDarkMode ? 'dark-mode' : ''}`}>
+      <AuthProvider> 
+        <NavBar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
