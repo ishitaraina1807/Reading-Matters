@@ -8,8 +8,6 @@ You can also check out the live demo of the website [here](https://searchbooks.v
 
 ## About the App
 
-
-
 ![Search Result](screenshots/searchresult.png)
 
 ## Installation
@@ -43,7 +41,7 @@ npm i or npm install
 Start Server
 
 ```bash
-npm run start
+npm run dev
 ```
 
 # Contributing Guidelines
@@ -65,7 +63,7 @@ Before you start contributing, please take a moment to read the following guidel
 - Clone your forked repository locally: `git clone https://github.com/ishitaraina1807/Reading-Matters.git`
 - Change your directory to the project: `cd <project name>`
 - Install project dependencies: `npm install`
-- Run in server: `npm run start`
+- Run in server: `npm run dev`
 
 ## How Can I Contribute?
 
