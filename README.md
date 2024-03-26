@@ -2,11 +2,11 @@
 
 ![Readging Matters](screenshots/homepage.png)
 
-Welcome to Reading Matter, your ultimate tool for discovering your next literary adventure! 📚🔍
+Welcome to Reading Matters, your ultimate tool for discovering your next literary adventure! 📚🔍
 
 ## About the App
 
-The Book Finder App is a delightful web application built with React, Tailwind CSS, Google Books API, and Firebase. Its primary goal is to make finding your next favorite book an enjoyable and easy experience. Whether you're a passionate bookworm or just looking for a good read, this app has got you covered!
+The Reading Matters - A Book Finder App is a delightful web application built with React, Tailwind CSS, Google Books API, and Firebase. The primary goal of the app is to make it easy for you to find your next favorite book an enjoyable experience. Whether you're a passionate bookworm or just looking for a good read, this app has got you covered!
 
 ## Key Features
 
