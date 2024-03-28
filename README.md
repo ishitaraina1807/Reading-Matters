@@ -10,6 +10,27 @@ You can also check out the live demo of the website [here](https://searchbooks.v
 
 ![Search Result](screenshots/searchresult.png)
 
+## Key Features
+
+- **Search Books**: Easily search for books using keywords, titles, authors, or ISBNs. The Google Books API ensures you get accurate and relevant results.
+
+- **Book Details**: Get comprehensive information about a book, including its title, author, cover image, description, and more. Make informed decisions about your reading choices.
+
+- **User-Friendly Interface**: The app features an intuitive and visually pleasing interface, designed with Tailwind CSS. Enjoy a smooth and engaging browsing experience.
+
+- **Responsive Design**: Access the app from various devices, including desktops, tablets, and smartphones. The responsive design ensures a consistent experience across platforms.
+
+## Technologies Used
+
+- **React**: A popular JavaScript library for building user interfaces. It provides a dynamic and efficient way to create interactive components.
+
+- **Tailwind CSS**: A utility-first CSS framework that makes styling and designing your app a breeze. Customize the app's appearance with ease.
+
+- **Google Books API**: Utilize the power of Google's vast book database to retrieve accurate and up-to-date book information.
+
+- **Firebase**: Google's platform for building web and mobile applications. We use Firebase Authentication for user management and Firestore for data storage.
+
+
 ## Installation
 
 Clone the Repo
