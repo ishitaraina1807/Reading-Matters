@@ -39,18 +39,23 @@ Clone the Repo
 git clone <reponame>
 ```
 
-### Rename the .env.example file to .env file in the root directory and add the values for the environment variables
+### Replace the dummy firebase credentials in firebase.js file with your real firebase credentials
 ```bash
-VITE_GOOGLE_BOOK_API="YOUR_BOOK_API_URL"
-VITE_FIREBASE_API_KEY="YOUR_FIREBASE_API_KEY"
-VITE_FIREBASE_AUTH_DOMAIN="YOUR_FIREBASE_AUTH_DOMAIN"
-VITE_FIREBASE_PROJECT_ID="YOUR_FIREBASE_PROJECT_ID"
-VITE_FIREBASE_STORAGE_BUCKET="YOUR_FIREBASE_STORAGE_BUCKET"
-VITE_FIREBASE_MESSAGING_SENDER_ID="YOUR_FIREBASE_MESSAGING_SENDER_ID"
-VITE_FIREBASE_APP_ID="YOUR_FIREBASE_APP_ID"
-VITE_FIREBASE_MEASUREMENT_ID="YOUR_FIREBASE_MEASUREMENT_ID"
+  apiKey: " AIzaSyD-4",
+  authDomain: " medcare-72185.firebaseapp.com",
+  projectId: "medcare-72185",
+  storageBucket: "medcare-72185.appspot.com",
+  messagingSenderId: "252642172466",
+  appId: "1:252642172465:web:1a4c1b",
+  measurementId: "G-4"
 ```
 ### You can refer a tutorial on how to get the firebase credentials [here](https://www.youtube.com/watch?v=ZTHdCMj3jP8)
+
+### Replace the dummy google books api in SearchResultPage.jsx file with your real api key
+```bash
+  apiKey: " AIzaSyD8UrfD4E1Oe2aG8sJQD3zjhDVdJh8yBWg",
+
+```
 ### A tutorial on how to obtain the google books api [here](https://www.youtube.com/watch?v=s_G5CnAu69M)
 
 Installation of dependencies

@@ -4,13 +4,13 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+  apiKey: " AIzaSyD-4", // Replace with your own API key
+  authDomain: " medcare-72185.firebaseapp.com", // Replace with your own Auth domain
+  projectId: "medcare-72185", // Replace with your own project ID
+  storageBucket: "medcare-72185.appspot.com", // Replace with your own storage bucket
+  messagingSenderId: "252642172466",  // Replace with your own messaging sender ID
+  appId: "1:252642172465:web:1a4c1b", // Replace with your own app ID
+  measurementId: "G-4" // Replace with your own measurement ID
 };
 
 
