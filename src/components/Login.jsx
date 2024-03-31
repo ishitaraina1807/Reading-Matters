@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth,logInWithEmailAndPassword, signInWithGoogle } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "../components/login.css";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,7 +14,7 @@ function Login() {
       // maybe trigger a loading screen
       return;
     }
-    if (user) navigate("/dashboard");
+    if (user) navigate("/homepage1");
   }, [user, loading,navigate]);
   return (
     <div className="login">
