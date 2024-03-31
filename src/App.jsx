@@ -11,6 +11,7 @@ import SignUp from "./components/Auth/SignUp";
 import { AuthProvider } from "./components/AuthProvider"; 
 import BookDescription from "./components/BookDescription";
 
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -33,7 +34,9 @@ function App() {
         </Routes>
         <Footer />
       </AuthProvider>
-    </div>
+
+</div>
+
   );
 }
 
