@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+      <div class="recaptcha-container">
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      </div>
+      <label for="privacy">
+        <input type="checkbox" id="privacy" name="privacy">
+        I agree to the Privacy Policy and Terms of Service
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  
+  <script src="https://www.google.com/recaptcha/api.js?render="></script>
+  
+</body>
+</html>
+

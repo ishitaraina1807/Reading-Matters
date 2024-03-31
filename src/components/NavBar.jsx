@@ -18,7 +18,7 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
           <a href="https://github.com/ishitaraina1807/Reading-Matters">
             <span>About</span>
           </a>
-          <a href="https://github.com/ishitaraina1807" target="_blank">
+          <a href="contact.html" target="_blank">
             <span>Contact</span>
           </a>
         </div>
