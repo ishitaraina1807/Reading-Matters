@@ -3,12 +3,12 @@ import { getFirestore,collection,addDoc,getDocs,query,where} from "firebase/fire
 import { getAuth, GoogleAuthProvider, signInWithPopup,signInWithEmailAndPassword,createUserWithEmailAndPassword,sendPasswordResetEmail, signOut} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBhqktEnFTcMiQW-z0ajmu_6-ZISkSxbs8",
+  apiKey: "AIzaSyBhqktEnFTcMjdW-z0ajmu_6-ZISkSxbs8",
   authDomain: "medcare-72186.firebaseapp.com",
   projectId: "medcare-72186",
   storageBucket: "medcare-72186.appspot.com",
-  messagingSenderId: "252642165465",
-  appId: "1:252642165465:web:20f03a154db35cc568ff10",
+  messagingSenderId: "256242165465",
+  appId: "1:252642165465:web:20f03a154ac35cc568ff10",
   measurementId: "G-G69NSKS137"
 };
 const googleProvider = new GoogleAuthProvider();
