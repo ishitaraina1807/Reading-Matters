@@ -11,7 +11,7 @@ import tailwind from '../images/tailwind.png'
 import firebase from '../images/firebase.png'
 import {Link} from "react-router-dom";
 
-export default function Homepage1() {
+export default function Homepage() {
   console.log('homepage')
   return (
     <div className='homepage'>

@@ -20,7 +20,7 @@ function SignUp() {
   };
   useEffect(() => {
     if (loading) return;
-    if (user) navigate("/home");
+    if (user) navigate("/homepage");
   }, [user, loading,navigate]);
   return (
     <div className="register">
